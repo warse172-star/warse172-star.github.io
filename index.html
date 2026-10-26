@@ -1,0 +1,108 @@
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Arsaney Warsey - Programmer and Web Developer.">
+<meta name="theme-color" content="#05070b">
+<title>Arsaney Warsey | Developer</title>
+<style>
+:root{--bg:#05070b;--panel:#0c121b;--cyan:#00e5ff;--text:#f4f8ff;--muted:#9aa9bd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:system-ui,Arial,sans-serif;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:16px 7%;background:#05070bef;border-bottom:1px solid #162532;backdrop-filter:blur(12px)}
+.logo{font-size:21px;font-weight:800}.logo span,.cyan{color:var(--cyan)}
+.links{display:flex;gap:18px;font-size:14px}.links a:hover{color:var(--cyan)}
+.hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:70px 20px;position:relative}
+.hero:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:#00e5ff18;filter:blur(70px);top:15%;z-index:-1}
+.tag{border:1px solid #17404a;border-radius:30px;padding:5px 14px;color:var(--cyan);font-size:13px}
+h1{font-size:clamp(38px,8vw,76px);line-height:1.15;margin:25px 0 15px;letter-spacing:-2px}
+h1 span{color:var(--cyan);text-shadow:0 0 30px #00e5ff40}
+.hero p{max-width:600px;color:var(--muted);font-size:17px}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 22px;border:1px solid var(--cyan);border-radius:8px;font-weight:700;transition:.25s}
+.btn.primary{background:var(--cyan);color:#001015}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 28px #00e5ff25}
+section{padding:75px 8%;scroll-margin-top:65px}
+.heading{text-align:center;font-size:32px;margin-bottom:35px}.heading span{color:var(--cyan)}
+.about{max-width:760px;margin:auto;text-align:center;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:17px}
+.card{background:linear-gradient(145deg,#101923,#080c12);border:1px solid #1b2b39;border-radius:14px;padding:24px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--cyan)}
+.card h3{color:var(--cyan);margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.symbol{font-size:27px;margin-bottom:8px}
+.contact{text-align:center;background:radial-gradient(ellipse at top,#06232a 0%,var(--bg) 65%)}
+footer{text-align:center;padding:22px;color:var(--muted);border-top:1px solid #17232c;font-size:13px}
+.reveal{animation:rise .8s both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:480px){nav{padding:14px 5%}.logo{font-size:17px}.links{gap:10px;font-size:12px}section{padding:60px 6%}}
+</style>
+</head>
+<body>
+<nav>
+<a class="logo" href="#home">Arsaney<span>.</span></a>
+<div class="links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<header class="hero reveal" id="home">
+<div class="tag">AVAILABLE FOR NEW PROJECTS</div>
+<h1>Hi, I'm <span>Arsaney<br>Warsey</span></h1>
+<p>Programmer & Web Developer. I build modern digital experiences with clean code, creative design, and powerful technology.</p>
+<div class="actions">
+<a class="btn primary" href="#projects">Explore My Work ↗</a>
+<a class="btn" href="#contact">Contact Me</a>
+</div>
+</header>
+
+<section id="about">
+<h2 class="heading">About <span>Me</span></h2>
+<p class="about">I'm Arsaney Warsey, a programmer passionate about web development and technology. I enjoy learning new skills and creating modern, responsive websites with a focus on quality, performance, and user experience.</p>
+</section>
+
+<section id="skills">
+<h2 class="heading">My <span>Skills</span></h2>
+<div class="grid">
+<div class="card"><div class="symbol">🌐</div><h3>HTML</h3><p>Building clear and accessible website structures.</p></div>
+<div class="card"><div class="symbol">🎨</div><h3>CSS</h3><p>Responsive layouts, modern styles and animations.</p></div>
+<div class="card"><div class="symbol">⚡</div><h3>JavaScript</h3><p>Interactive experiences and dynamic interfaces.</p></div>
+<div class="card"><div class="symbol">🐍</div><h3>Python</h3><p>Programming fundamentals and useful scripts.</p></div>
+<div class="card"><div class="symbol">🖥️</div><h3>PHP</h3><p>Server-side web development fundamentals.</p></div>
+<div class="card"><div class="symbol">⚛️</div><h3>React</h3><p>Modern component-based user interfaces.</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="heading">Featured <span>Projects</span></h2>
+<div class="grid">
+<div class="card"><div class="symbol">🚀</div><h3>Personal Portfolio</h3><p>A modern portfolio to showcase my skills and work.</p></div>
+<div class="card"><div class="symbol">💻</div><h3>Web Experiences</h3><p>Responsive website concepts with modern interfaces.</p></div>
+<div class="card"><div class="symbol">✨</div><h3>Creative Ideas</h3><p>Exploring new technologies and turning ideas into code.</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="heading">Let's <span>Connect</span></h2>
+<p class="about">Have a project idea or want to connect? Reach out and let's create something great.</p>
+<div class="actions">
+<a class="btn primary" href="https://github.com/warse172-star" target="_blank" rel="noopener">My GitHub ↗</a>
+<a class="btn" href="mailto:hello@example.com">Email Me</a>
+</div>
+</section>
+
+<footer>© <span id="year"></span> Arsaney Warsey. Built with passion and code.</footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("reveal");observer.unobserve(entry.target)}})},{threshold:.12});
+document.querySelectorAll("section .card, section .heading, section .about").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
+```
